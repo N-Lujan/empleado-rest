@@ -1,16 +1,28 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmpleadoCrearComponent } from './empleado-crear/empleado-crear.component';
+import { EmpleadoDetallesComponent } from './empleado-detalles/empleado-detalles.component';
+import { EmpleadoListadoComponent } from './empleado-listado/empleado-listado.component';
+import { EmpleadoActualizarComponent } from './empleado-actualizar/empleado-actualizar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EmpleadoCrearComponent,
+    EmpleadoDetallesComponent,
+    EmpleadoListadoComponent,
+    EmpleadoActualizarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
